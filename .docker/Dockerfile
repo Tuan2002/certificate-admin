@@ -8,7 +8,7 @@ WORKDIR /app
 
 RUN apk add --no-cache libc6-compat
 COPY package.json pnpm-lock.yaml* ./
-RUN pnpm install --frozen-lockfile --ignore-scripts
+RUN pnpm install --ignore-scripts
 
 FROM base AS builder
 
