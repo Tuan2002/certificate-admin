@@ -1,11 +1,10 @@
 "use client";
-
 import {
-  Image as MantineImage,
   MantineStyleProp,
   Skeleton,
 } from "@mantine/core";
 import React, { memo, useState } from "react";
+import { Image as MantineImage } from "@mantine/core";
 
 type ImageProps = {
   src: string;
